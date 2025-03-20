@@ -1,0 +1,90 @@
+:root {
+    /* Colors for project */
+    --color-background: #1f517d;
+    /* Blanco Ahumado */
+    --color-background-secondary: #ffffff;
+    /* Beige Claro */
+
+    --font-color-white: #ffffff;
+    /* Puntos focales y llamados a acción */
+    --font-color-black: rgb(0, 0, 0);
+    /* Rojo Vino */
+
+    /* Typography */
+    --font-family-headings: 'Montserrat', sans-serif;
+    --font-family-body: 'Open Sans', sans-serif;
+    /* Font weights */
+    --font-weight-headings: 700;
+}
+
+body,
+p {
+    font-family: "Roboto", sans-serif;
+    font-size: small;
+}
+
+#menu {
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--color-background-secondary);
+}
+
+#menu::before {
+    content: "≡";
+}
+
+.navigation li {
+    display: none;
+}
+
+.show li {
+    display: block;
+    background-color: var(--color-background);
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+header,
+footer {
+    background-color: var(--color-background);
+    color: var(--color-background-secondary);
+}
+
+header,
+main,
+footer {
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    width: 300px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    display: block;
+    color: var(--color-background-secondary);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: larger;
+}
+
+nav a:hover,
+.navigation a:active {
+    text-decoration: none;
+    background-color: var(--color-background-secondary);
+    color: var(--font-color-black);
+}
