@@ -25,9 +25,11 @@
 
 <body>
     <header>
-        <h1>Alfredo N. Juanillo</h1>
-        <img src="" alt="">
-        <div>
+        <div class="headerflex">
+            <h1>Alfredo N. Juanillo</h1>
+            <img src="images/profile.jpeg" alt="Profile image" width="100px">
+        </div>
+        <div class="navlist">
             <a id="menu" href="#"></a>
             <nav>
                 <ul class="navigation">
@@ -41,14 +43,28 @@
     </header>
     <main>
         <h1>Home</h1>
-        <section>
-            <h2>Course Work</h2>
-        </section>
-        <section>
-            <h2>Toloria, Madagascar</h2>
-        </section>
+        <div class="aboutme">
+            <section>
+                <h2>Course Work</h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Tacna, Peru</h2>
+                <img src="images/tacna-small.webp" alt="Ejemplo" width="200px">
+            </section>
+        </div>
+
         <section>
             <h2>Web and Computer Programming Certificate</h2>
+            <button>All Courses</button>
+            <button>WDD Courses</button>
+            <button>CSE Courses</button>
+            <p>The Total number of course listed below is <span id="courses-count"></span></p>
+            <section class="courses-list"></section>
         </section>
     </main>
     <footer>
