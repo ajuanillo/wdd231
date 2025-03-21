@@ -77,3 +77,39 @@ const courses = [
         completed: false
     }
 ]
+const buttons = document.querySelectorAll('section button');
+const coursesList = document.querySelector('.courseslist');
+const countSpan = document.getElementById('courses-count');
+
+// Función para filtrar y mostrar cursos
+function showCourses(selectedSubject) {
+    // Limpiar lista actual
+    coursesList.innerHTML = '';
+
+    // Filtrar cursos según el botón
+    const filteredCourses = selectedSubject === 'All'
+        ? courses
+        : courses.filter(course => course.subject === selectedSubject);
+
+    // Actualizar contador
+    countSpan.textContent = filteredCourses.length;
+
+    // Crear botones para cada curso
+    filteredCourses.forEach(course => {
+        const courseButton = document.createElement('button');
+        courseButton.textContent = `${course.subject}${course.number}`;
+        coursesList.appendChild(courseButton);
+    });
+}
+
+// Agregar event listeners a los botones
+buttons.forEach(button => {
+    button.addEventListener('click', (e) => {
+        const subject = e.target.textContent; // Usamos el texto completo del botón
+        showCourses(subject);
+    });
+});
+
+// Mostrar todos los cursos al cargar la página
+showCourses('All');
+
