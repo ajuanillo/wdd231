@@ -97,7 +97,7 @@ function showCourses(selectedSubject) {
     // Crear botones para cada curso
     filteredCourses.forEach(course => {
         const courseButton = document.createElement('button');
-        courseButton.textContent = `${course.subject}${course.number}`;
+        courseButton.textContent = `${course.subject} ${course.number}`;
         coursesList.appendChild(courseButton);
     });
 }

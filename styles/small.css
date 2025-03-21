@@ -23,6 +23,10 @@ p {
     font-size: small;
 }
 
+h2 {
+    margin: 0;
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -64,6 +68,7 @@ header,
 footer {
     background-color: var(--color-background);
     color: var(--color-background-secondary);
+    padding: 15px 0;
 }
 
 header,
@@ -93,4 +98,43 @@ nav a:hover,
     text-decoration: none;
     background-color: var(--color-background-secondary);
     color: var(--font-color-black);
+}
+
+main {
+    padding: 20px;
+}
+
+.aboutme {
+    gap: 15px;
+}
+
+.aboutme section {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.aboutme h2 {
+    background-color: var(--color-background);
+    padding: 10px;
+    color: var(--font-color-white);
+
+}
+
+button {
+    padding: 5px 0;
+    width: 90px;
+}
+
+.courseslist {
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px;
+    gap: 10px;
+}
+
+.courseslist button {
+    padding: 10px;
+    gap: 10px;
+    width: 100%;
 }
