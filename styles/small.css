@@ -112,6 +112,10 @@ main {
     border-radius: 10px;
     width: 100%;
 }
+.aboutme section img {
+    width: 100%;
+    height: auto;
+}
 
 .aboutme h2 {
     background-color: var(--color-background);
