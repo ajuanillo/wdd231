@@ -1,35 +1,21 @@
 @media (min-width: 540px) {
     header {
         display: flex;
+        flex-direction: column;
     }
 
-    .navigation {
+    .navigation ul {
         display: flex;
         justify-content: space-around;
+
     }
 
     .navigation li {
         display: grid;
     }
 
-    nav ul {
-        justify-content: flex-end;
-        flex-direction: row;
-    }
-
-    nav a {
-        flex: 1 1 100%;
-    }
-
     #menu {
         display: none;
-    }
-
-    .aboutme {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 100%;
     }
 
     .courseslist {
