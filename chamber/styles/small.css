@@ -190,7 +190,7 @@ main {
 }
 
 .list section:nth-child(even) {
-    background-color: #bed;
+    background-color: rgb(225, 225, 225);
 }
 
 section h3 {
