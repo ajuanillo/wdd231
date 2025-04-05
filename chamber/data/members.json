@@ -4,11 +4,16 @@
         "address": "Tacna, Peru",
         "phone_number": "+56 (2) 29410300",
         "website_url": "https://www.bnamericas.com",
-        "image_icon": "consorcio_salud_tacna.png",
+        "image_icon": "default_image.png",
         "membership_level": 3,
         "additional_info": {
             "industry": "Infrastructure",
-            "services": ["Hospital", "Sports centers", "Schools", "Public Parks"],
+            "services": [
+                "Hospital",
+                "Sports centers",
+                "Schools",
+                "Public Parks"
+            ],
             "email": "info@bnamericas.com"
         }
     },
@@ -17,12 +22,12 @@
         "address": "Av. Cusco 765, Tacna, Peru",
         "phone_number": null,
         "website_url": "https://www.facebook.com/EspecialistasEnMaquinaria",
-        "image_icon": "tecmin_logo.png",
+        "image_icon": "default_image.png",
         "membership_level": 2,
         "additional_info": {
             "industry": "Technical and Vocational Training",
             "specialties": [
-                "Operación de Maquinaria Pesada", 
+                "Operación de Maquinaria Pesada",
                 "Mantenimiento de Maquinaria Pesada"
             ],
             "founded_year": 2002
@@ -33,11 +38,14 @@
         "address": null,
         "phone_number": "+51 961 492 978",
         "website_url": null,
-        "image_icon": "soluciones_takana.png",
+        "image_icon": "default_image.png",
         "membership_level": 1,
         "additional_info": {
             "industry": "Technical Support",
-            "services": ["IT Support", "Digital Solutions"]
+            "services": [
+                "IT Support",
+                "Digital Solutions"
+            ]
         }
     },
     {
@@ -45,11 +53,14 @@
         "address": null,
         "phone_number": null,
         "website_url": null,
-        "image_icon": null,
+        "image_icon": "default_image.png",
         "membership_level": 1,
         "additional_info": {
             "industry": "Digital Marketing",
-            "services": ["Website Development", "Online Marketing Strategies"]
+            "services": [
+                "Website Development",
+                "Online Marketing Strategies"
+            ]
         }
     },
     {
@@ -57,10 +68,12 @@
         "address": null,
         "phone_number": null,
         "website_url": null,
-        "image_icon": null,
+        "image_icon": "default_image.png",
         "membership_level": 1,
         "additional_info": {
-            "industry": ["Digital Marketing"],
+            "industry": [
+                "Digital Marketing"
+            ],
             "description": "Helping entrepreneurs digitalize their businesses."
         }
     }

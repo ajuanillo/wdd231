@@ -148,13 +148,19 @@ footer {
     align-items: center;
 }
 
+article section {
+    background-color: rgb(231, 230, 230);
+    min-height: 250px;
+    border-radius: 5px;
+}
+
 .grid section {
     text-align: center;
 }
 
 .grid img {
     border: 1px solid #fff;
-    box-shadow: 0 0 10px #333;
+    box-shadow: 0 0 10px #a98989;
 }
 
 .grid section>* {
@@ -208,7 +214,7 @@ section a {
 }
 
 img {
-    height: 75px;
+    height: 60px;
     max-width: 100%;
     /* Images are jerks - Seattle*/
 }
