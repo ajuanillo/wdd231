@@ -97,13 +97,11 @@ header,
 footer {
     background-color: var(--color-background);
     color: var(--color-background-secondary);
-    padding: 15px 0;
 }
 
 header,
 main,
 footer {
-    gap: 10px;
     text-align: center;
 }
 
@@ -125,8 +123,9 @@ nav a:hover,
     border-color: 2px solid grey;
 }
 
-main {
-    padding: 20px;
+main,
+footer {
+    padding: 10px;
 }
 
 .menu {
