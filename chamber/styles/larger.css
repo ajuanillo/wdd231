@@ -28,4 +28,25 @@
         width: 100%;
         gap: 10px;
     }
+
+    .principal {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        border-bottom: 150px;
+    }
+
+    .dataconteiner {
+        position: absolute;
+        bottom: 60px;
+        right: 50px;
+        background-color: var(--color-background-secondary);
+        padding: 20px;
+        border-radius: 2%;
+    }
 }

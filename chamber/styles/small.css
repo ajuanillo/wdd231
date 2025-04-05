@@ -220,3 +220,8 @@ img {
     max-width: 100%;
     /* Images are jerks - Seattle*/
 }
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
