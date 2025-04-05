@@ -27,7 +27,7 @@
 
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/members.js" defer></script>
+    <script src="scripts/topMembers.js" defer></script>
 </head>
 
 <body>
@@ -46,18 +46,21 @@
             </ul>
         </nav>
     </header>
-    <main class="principal">
+    <main>
         <h1>Tacna Chamber of Commerce Home page</h1>
-        <div class="hero">
+        <div class="hero principal">
             <picture>
                 <source media="(min-width: 1200px)" srcset="images/chamber-commerce-tacna-large.webp" width="1200">
                 <source media="(min-width: 1000px)" srcset="images/chamber-commerce-tacna-medium.webp" width="1000">
                 <img src="images/chamber-commerce-tacna-small.webp" alt="Santa Winery" width="500">
             </picture>
+            <div class="dataconteiner">
+                <a href="join.html" class="cta-button">Join to Tacna Chamber Commerce</a>
+            </div>
         </div>
-        <div class="dataconteiner">
-            <a href="join.html" class="cta-button">Join to Tacna Chamber Commerce</a>
-        </div>
+
+        <section class="members">
+        </section>
     </main>
     <footer>
         <p>&copy;<span id="year"></span> Alfredo Juanillo Peru </p>
