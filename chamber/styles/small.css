@@ -171,6 +171,7 @@ article section {
 .list {
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
 
 .list section {
@@ -178,6 +179,7 @@ article section {
     grid-template-columns: 2fr 1fr 1fr;
     margin: 0;
     padding: 0.25rem;
+    min-height: 50px;
 }
 
 .list section>* {
