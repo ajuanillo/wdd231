@@ -27,13 +27,13 @@ input[type="submit"] {
     border: none; 
     border-radius: 5px; 
     font-size: 16px;
-    background-color: var(--color-text-primary);
-    color: var(--color-background);
+    background-color: #1f517d ;
+    color: white;
 }
 
 input[type="submit"]:hover {
-    background-color:var(--bugambilla); 
-    color: var(--color-background);
+    background-color:#bcd5f7; 
+    color: #1f517d;
 }
 
 /* For form styles*/
