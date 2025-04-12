@@ -24,11 +24,13 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
 
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/topmembers.js" defer></script>
     <script src="scripts/temperature.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 </head>
 
 <body>
@@ -49,7 +51,110 @@
     </header>
     <main>
         <h1>Join to Tacna Chamber of Commerce</h1>
-
+        <form method="get" action="thankyou.html">
+            <h1>Membership Application</h1>
+      
+            <label>
+              First Name:
+              <input type="text" name="firstName" title="Your First Name" required autocomplete="given-name">
+            </label>
+      
+            <label>
+              Last Name:
+              <input type="text" name="lastName" title="Your Last Name" required autocomplete="family-name">
+            </label>
+      
+            <label>
+              Organizational Title:
+              <input type="text" name="orgTitle" title="Your Organizational Title" pattern="[A-Za-z\s\-]{7,}" autocomplete="organization-title">
+            </label>
+      
+            <label>
+              Email:
+              <input type="email" name="email" title="Your Email Address" required autocomplete="email" placeholder="example@domain.com">
+            </label>
+      
+            <label>
+              Mobile Phone:
+              <input type="tel" name="phone" title="Your Mobile Number" required autocomplete="tel">
+            </label>
+      
+            <label>
+              Organization Name:
+              <input type="text" name="organization" title="Business or Organization Name" required autocomplete="organization">
+            </label>
+      
+            <label>
+              Membership Level:
+              <select name="membershipLevel" title="Choose Membership Level">
+                <option value="np">NP Membership (Non-Profit)</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+              </select>
+            </label>
+      
+            <label>
+              Organization Description:
+              <textarea name="orgDescription" title="Describe Your Organization"></textarea>
+            </label>
+      
+            <input type="hidden" name="timestamp" id="timestamp">
+      
+            <input type="submit" value="Submit Application">
+          </form>
+      
+          <section class="membership-cards">
+            <div class="card np-card">
+              <h2>NP Membership</h2>
+              <a href="#np-modal">More Info</a>
+            </div>
+            <div class="card bronze-card">
+              <h2>Bronze Membership</h2>
+              <a href="#bronze-modal">More Info</a>
+            </div>
+            <div class="card silver-card">
+              <h2>Silver Membership</h2>
+              <a href="#silver-modal">More Info</a>
+            </div>
+            <div class="card gold-card">
+              <h2>Gold Membership</h2>
+              <a href="#gold-modal">More Info</a>
+            </div>
+          </section>
+      
+          <!-- Modals -->
+          <div id="np-modal" class="modal">
+            <div class="modal-content">
+              <h3>NP Membership Benefits</h3>
+              <p>Perfect for nonprofits. Free access, event invitations, and networking opportunities.</p>
+              <a href="#" class="close">Close</a>
+            </div>
+          </div>
+      
+          <div id="bronze-modal" class="modal">
+            <div class="modal-content">
+              <h3>Bronze Membership Benefits</h3>
+              <p>Event access, business directory listing, and member discounts.</p>
+              <a href="#" class="close">Close</a>
+            </div>
+          </div>
+      
+          <div id="silver-modal" class="modal">
+            <div class="modal-content">
+              <h3>Silver Membership Benefits</h3>
+              <p>All Bronze perks plus homepage feature, additional advertising, and early event invites.</p>
+              <a href="#" class="close">Close</a>
+            </div>
+          </div>
+      
+          <div id="gold-modal" class="modal">
+            <div class="modal-content">
+              <h3>Gold Membership Benefits</h3>
+              <p>Includes everything from Silver + premium advertising spots, VIP access, and training.</p>
+              <a href="#" class="close">Close</a>
+            </div>
+          </div>
     </main>
     <footer>
         <p>&copy;<span id="year"></span> Alfredo Juanillo Peru </p>

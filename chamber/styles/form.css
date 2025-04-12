@@ -1,0 +1,87 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form {
+    width: 550px;
+}
+select,textarea {
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+    display: block;
+    width: 100%;
+}
+fieldset {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="text"] {
+    width: 100%; 
+}
+input[type="submit"] {
+    width: 100%; 
+    margin-top: 20px;
+    padding: 12px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px;
+    background-color: var(--color-text-primary);
+    color: var(--color-background);
+}
+
+input[type="submit"]:hover {
+    background-color:var(--bugambilla); 
+    color: var(--color-background);
+}
+
+/* For form styles*/
+  
+  label {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+  
+  .membership-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+  
+  .card {
+    flex: 1 1 200px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    animation: fadeInCard 1s ease-in;
+  }
+  
+  @keyframes fadeInCard {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    right: 0; bottom: 0;
+    background: rgba(0,0,0,0.7);
+  }
+  
+  .modal-content {
+    background: #fff;
+    padding: 1rem;
+    margin: 10% auto;
+    max-width: 400px;
+    border-radius: 8px;
+  }
