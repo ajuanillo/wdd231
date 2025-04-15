@@ -227,7 +227,7 @@ img {
 }
 
 .discover-grid {
-    display: grid;
+    display: block;
     grid-template-areas:
       "cards";
     grid-template-columns: 1fr;
@@ -256,7 +256,8 @@ img {
   .card p { grid-area: desc; }
   .card button { grid-area: button; }
   .card figure img {
-    width: 320px;
+    min-width: 320px;
+    max-width: 640px;
     height: auto;
   }
   
