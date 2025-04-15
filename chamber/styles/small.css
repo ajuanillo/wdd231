@@ -225,3 +225,45 @@ img {
     width: 100%;
     height: auto;
 }
+
+.discover-grid {
+    display: grid;
+    grid-template-areas:
+      "cards";
+    grid-template-columns: 1fr;
+  }
+  
+  .cards-container {
+    grid-area: cards;
+  }
+  
+  .card {
+    display: grid;
+    grid-template-areas:
+      "title"
+      "image"
+      "address"
+      "desc"
+      "button";
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .card h2 { grid-area: title; }
+  .card figure { grid-area: image; }
+  .card address { grid-area: address; }
+  .card p { grid-area: desc; }
+  .card button { grid-area: button; }
+  .card figure img {
+    width: 320px;
+    height: auto;
+  }
+  
+  /* Hover effect (disabled for mobile) */
+  @media (hover: hover) {
+    .card img:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+    }
+  }
