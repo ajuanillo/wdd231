@@ -1,3 +1,23 @@
+:root{
+  /* Colors for project */
+  --color-background: #ebebeb; /* Blanco Ahumado */
+  --color-background-secondary: #F5F5F5; /* Gris muy claro para fondos secundarios */
+
+  --color-text-primary: #333333; /* Gris oscuro para el texto principal (como se ve en el logo) */
+  --color-text-secondary: #666666; /* Gris medio para textos secundarios */
+  
+  --color-accent-gold: #B8860B; /* Dorado para el símbolo del sol y acentos */
+  --color-accent-light-gold: #D4AF37; /* Dorado más claro para variaciones */
+  
+  /* Colores adicionales para puntos de acción y contraste */
+  --color-white: #FFFFFF;
+  --color-accent-burgundy: #800020; 
+  /* Typography */
+  --font-family-headings: 'Montserrat', sans-serif;
+  --font-family-body: 'Open Sans', sans-serif;
+  /* Font weights */
+  --font-weight-headings: 700;
+}
 main {
     display: flex;
     flex-direction: column;

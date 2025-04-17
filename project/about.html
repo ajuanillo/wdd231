@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tacna Chamber of Commerce Home page</title>
-    <meta name="description" content="This is a page for display home page of the project Tacna Chamber of commerce">
+    <title>Santa Elena Project Home page</title>
+    <meta name="description" content="This is a page for display home page of the project Santa Elena Project">
     <meta name="author" content="Alfredo Nestor Juanillo">
 
     <!--  Essential META Tags -->
-    <meta property="og:title" content="Tacna Chamber of Commerce">
+    <meta property="og:title" content="Santa Elena Project">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://peru.info/archivos/publicacion/178-imagen-930171942022.jpg">
     <meta property="og:url" content="https://ajuanillo.github.io/wdd231/chamber/directory">
@@ -20,7 +20,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Open+Sans&display=swap"
         rel="stylesheet">
 
-    <link rel="icon" href="images/chamber_icon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -34,43 +33,57 @@
 <body>
     <header>
         <div class="headerflex">
-            <h1>Tacna Chamber of Commerce Home page</h1>
-            <img src="images/logo_tacna.png" alt="Profile image" width="50">
+            <h1>Santa Elena</h1>
+            <img src="images/logo.png" alt="Profile image" width="50">
         </div>
         <a id="menu" href="#"></a>
         <nav class="navigation">
             <ul>
-                <li><a href="index.html" id="home" class="active">Home</a></li>
-                <li><a href="directory.html" id="directory">Directory</a></li>
-                <li><a href="join.html" id="join">Join</a></li>
-                <li><a href="discover.html" id="discover">Discover</a></li>
+                <li><a href="index.html" id="home" >Home</a></li>
+                <li><a href="about.html" id="about" class="active">About</a></li>
+                <li><a href="products.html" id="products">Products</a></li>
+                <li><a href="contact.html" id="contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Tacna Chamber of Commerce Home page</h1>
-        <div class="hero principal">
+    <main class="principal">
+        <div class="hero">
             <picture>
-                <source media="(min-width: 1200px)" srcset="images/cctacna-large.webp" width="1200">
-                <source media="(min-width: 1000px)" srcset="images/cctacna-medium.webp" width="1000">
-                <img src="images/cctacna-small.webp" alt="Santa Winery" width="500">
+                <source media="(min-width: 1500px)" srcset="images/santa-large.webp" width="1500" height="750">
+                <source media="(min-width: 1000px)" srcset="images/santa-medium.webp" width="1000" height="500">
+                <img src="images/santa-small.webp" alt="Santa Winery" width="500" height="250">
             </picture>
-            <div class="dataconteiner">
-                <a href="join.html" class="cta-button">Join to Tacna Chamber Commerce</a>
-            </div>
         </div>
-
-        <section class="members">
-            <h2>Gold and Silver members</h2>
-        </section>
-        <div>
-            <p>The current temperature in Tacna, Peru is <span id="current-temp"></span></p>
-            <!--             <figure>
-                <img id="weather-icon" src="" alt="">
-                <figcaption></figcaption>
-            </figure> -->
+        <div class="dataconteiner">
+           <h2>
+            We are in Tacna
+           </h2>
+           
+           <div>
+            <ul>
+                <li>Area: 16 076 km²</li>
+                <li>Population: 388,019 </li>
+                <li>Capital: Tacna </li>
+                <li>Languages: Spanish, Aymara</li>
+                <li>Currency: Peruvian Nuevo Sol</li>
+                <li>Time Zone: GMT -5</li>
+                <li>Calling Code: +51</li>
+                <li>Internet TLD: .pe/li>
+            </ul>
+           </div>
         </div>
-
+       <div class="wheaterconteiner">
+           <h2 class="wheateremoji">Our wheater is</h2>
+           <img src="images/weather_clouds_sun_sunny_icon.svg" alt="Wheater icon" class="weather-icon"> 
+           <div>
+            <ul>
+                <li id="temperature">Temperature: </li>
+                <li>Condition: Sunny</li>
+                <li id="windSpeed">Wind: </li>
+                <li id="windChill">Wind Chill: </li>
+            </ul>
+           </div>
+       </div>
     </main>
     <footer>
         <p>&copy;<span id="year"></span> Alfredo Juanillo Peru </p>

@@ -49,7 +49,7 @@ header {
     font-size: 2rem;
     font-weight: 500;
     text-decoration: none;
-    color: var(--color-background-secondary);
+    color: var(--color-accent-burgundy);
     padding: 45%;
 }
 
@@ -61,8 +61,11 @@ header {
     padding: 0;
     grid-column-start: 1;
     grid-column-end: 3;
+    background-color: var(--color-accent-gold);
 }
-
+header h1 {
+    color: var(--color-accent-gold);
+}
 .navigation ul {
     padding: 0;
 }
@@ -73,13 +76,13 @@ header {
 
 .show li {
     display: block;
-    background-color: var(--color-background);
+    background-color: var(--color-accent-gold);
 }
 
 .navigation .active {
-    background-color: var(--color-background-secondary);
+    background-color: var(--color-accent-gold);
     /* Puedes ajustar este color para que coincida con tu paleta */
-    color: var(--font-color-black);
+    color: var(--color-accent-burgundy);
     font-weight: bold;
     text-decoration: underline;
     border-radius: 4px;
@@ -134,7 +137,7 @@ footer {
     margin: 1rem auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0.5rem;
-    background-color: var(--color-background);
+    background-color: var(--color-accent-gold);
     text-align: center;
 }
 
