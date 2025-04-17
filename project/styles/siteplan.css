@@ -1,0 +1,66 @@
+:root{
+    /* Colors for project */
+    --color-background: #ebebeb; /* Blanco Ahumado */
+    --color-background-secondary: #F5F5F5; /* Gris muy claro para fondos secundarios */
+
+    --color-text-primary: #333333; /* Gris oscuro para el texto principal (como se ve en el logo) */
+    --color-text-secondary: #666666; /* Gris medio para textos secundarios */
+    
+    --color-accent-gold: #B8860B; /* Dorado para el símbolo del sol y acentos */
+    --color-accent-light-gold: #D4AF37; /* Dorado más claro para variaciones */
+    
+    /* Colores adicionales para puntos de acción y contraste */
+    --color-white: #FFFFFF;
+    --color-accent-burgundy: #800020; 
+    /* Typography */
+    --font-family-headings: 'Montserrat', sans-serif;
+    --font-family-body: 'Open Sans', sans-serif;
+    /* Font weights */
+    --font-weight-headings: 700;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+h1,h2,h3 {
+    font-family: var(--font-family-headings);
+}
+p {
+	font-family:var(--font-family-body);
+}
+header {
+    background-color: var(--color-background);
+    justify-items: center;
+    color: var(--color-text-primary);
+    padding: 1rem;
+}
+.headerflex {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+main   {
+    display: grid;
+    gap: 10px;
+    padding: 10px 15px;
+}
+section {
+    background-color: var(--color-background-secondary);
+    padding: 10px;
+    border: 1px solid var(--color-accent-gold);
+}
+section h2 {
+    text-align: center;
+}
+.wireframes {
+    justify-items: center;
+}
+
+footer {
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    padding: 1rem;
+    justify-items: center;
+}
