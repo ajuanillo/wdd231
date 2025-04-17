@@ -1,0 +1,60 @@
+@media (min-width: 540px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .navigation li {
+        display: grid;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .courseslist {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 10px;
+    }
+
+    .courseslist button {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .principal {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        border-bottom: 150px;
+    }
+
+    .dataconteiner {
+        position: absolute;
+        bottom: 60px;
+        right: 50px;
+        background-color: var(--color-background-secondary);
+        padding: 20px;
+        border-radius: 2%;
+    }
+    /* For data grid larger*/
+    .discover-grid {
+        grid-template-areas:
+          "visit cards cards";
+        grid-template-columns: 1fr 2fr 2fr;
+      }
+
+
+}

@@ -1,0 +1,270 @@
+:root {
+    /* Colors for project */
+    --color-background: #1f517d;
+    /* Blanco Ahumado */
+    --color-background-secondary: #ffffff;
+    /* Beige Claro */
+    --color-hover: #bcd5f7;
+    --font-color-white: #ffffff;
+    /* Puntos focales y llamados a acción */
+    --font-color-black: rgb(0, 0, 0);
+    /* Rojo Vino */
+
+    /* Typography */
+    --font-family-headings: 'Montserrat', sans-serif;
+    --font-family-body: 'Open Sans', sans-serif;
+    /* Font weights */
+    --font-weight-headings: 700;
+}
+
+body,
+p {
+    font-family: "Roboto", sans-serif;
+    font-size: small;
+}
+
+h2 {
+    margin: 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.headerflex {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerflex img {
+    padding: 10px;
+}
+
+#menu {
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--color-background-secondary);
+    padding: 45%;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+.navigation {
+    padding: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.navigation ul {
+    padding: 0;
+}
+
+.navigation li {
+    display: none;
+}
+
+.show li {
+    display: block;
+    background-color: var(--color-background);
+}
+
+.navigation .active {
+    background-color: var(--color-background-secondary);
+    /* Puedes ajustar este color para que coincida con tu paleta */
+    color: var(--font-color-black);
+    font-weight: bold;
+    text-decoration: underline;
+    border-radius: 4px;
+}
+
+/* Para mejorar la accesibilidad */
+.navigation .active:focus,
+.navigation .active:hover {
+    outline: 2px solid #004080;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+header,
+footer {
+    background-color: var(--color-background);
+    color: var(--color-background-secondary);
+}
+
+header,
+main,
+footer {
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    color: var(--color-background-secondary);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: larger;
+}
+
+nav a:hover,
+.navigation a:active {
+    text-decoration: none;
+    background-color: var(--color-hover);
+    color: var(--font-color-black);
+    border-radius: 4px;
+    border: 1px solid white;
+}
+
+main,
+footer {
+    padding: 10px;
+}
+
+.menu {
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: var(--color-background);
+    text-align: center;
+}
+
+.menu button {
+    padding: 1rem;
+    font-weight: 700;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+}
+
+article section {
+    background-color: rgb(231, 230, 230);
+    min-height: 250px;
+    border-radius: 5px;
+}
+
+.grid section {
+    text-align: center;
+}
+
+.grid img {
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px #a98989;
+}
+
+.grid section>* {
+    margin: 0.1rem;
+}
+
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+    min-height: 50px;
+}
+
+.list section>* {
+    margin: 0 1rem;
+}
+
+.list section img {
+    display: none;
+    /* smaller viewports only */
+}
+
+.list section h3 {
+    font-size: 1rem;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+    background-color: rgb(225, 225, 225);
+}
+
+section h3 {
+    font-size: 1.5rem;
+}
+
+section p {
+    font-weight: 600;
+    font-size: smaller;
+}
+
+section a {
+    font-size: 0.85rem;
+    color: navy;
+    letter-spacing: 1.1pt;
+}
+
+img {
+    height: 60px;
+    max-width: 100%;
+    /* Images are jerks - Seattle*/
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.discover-grid {
+    display: block;
+    grid-template-areas:
+      "cards";
+    grid-template-columns: 1fr;
+  }
+  
+  .cards-container {
+    grid-area: cards;
+  }
+  
+  .card {
+    display: grid;
+    grid-template-areas:
+      "title"
+      "image"
+      "address"
+      "desc"
+      "button";
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .card h2 { grid-area: title; }
+  .card figure { grid-area: image; }
+  .card address { grid-area: address; }
+  .card p { grid-area: desc; }
+  .card button { grid-area: button; }
+  .card figure img {
+    min-width: 320px;
+    max-width: 640px;
+    height: auto;
+  }
+  
+  /* Hover effect (disabled for mobile) */
+  @media (hover: hover) {
+    .card img:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+    }
+  }
