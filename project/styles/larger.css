@@ -39,16 +39,15 @@
         display: none;
     }
 
-    .courseslist {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        padding: 10px;
-    }
-
-    .courseslist button {
-        width: 100%;
-        gap: 10px;
-    }
+.sampleproducts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr)); 
+    gap: 15px;
+}
+.sampleproducts img {
+    height: 100%;
+    width: auto;
+}
 
     .principal {
         position: relative;

@@ -101,7 +101,7 @@ header h1 {
 header,
 footer {
     background-color: var(--color-background);
-    color: var(--color-background-secondary);
+    color: var(--color-accent-gold);
 }
 
 header,
@@ -123,7 +123,7 @@ nav a:hover,
 .navigation a:active {
     text-decoration: none;
     background-color: var(--color-hover);
-    color: var(--font-color-black);
+    color: var(--color-text-primary);
     border-radius: 4px;
     border: 1px solid white;
 }
@@ -230,7 +230,10 @@ img {
     width: 100%;
     height: auto;
 }
-
+.sampleproducts img {
+    width: 100%;
+    height: auto;
+}
 .discover-grid {
     display: block;
     grid-template-areas:
