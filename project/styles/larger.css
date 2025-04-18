@@ -63,8 +63,8 @@
 
     .dataconteiner {
         position: absolute;
-        bottom: 60px;
-        right: 50px;
+        top: 30px;
+        left: 15px;
         background-color: var(--color-background-secondary);
         padding: 20px;
         border-radius: 2%;
