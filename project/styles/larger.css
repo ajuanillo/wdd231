@@ -19,7 +19,7 @@
     --font-weight-headings: 700;
 }
 
-@media (min-width: 540px) {
+@media (min-width: 600px) {
     header {
         display: flex;
         flex-direction: column;

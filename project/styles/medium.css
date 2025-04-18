@@ -1,8 +1,0 @@
-.discover-grid {
-    grid-template-areas:
-      "visit cards";
-    grid-template-columns: 1fr 3fr;
-  }
-  #visit-message {
-    grid-area: visit;
-  }
