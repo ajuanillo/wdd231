@@ -1,0 +1,100 @@
+{
+    "bodega": "Santa Elena",
+    "ubicacion": "Tacna, Perú",
+    "fundacion": 1982,
+    "productos": [
+      {
+        "id": 1,
+        "nombre": "Vino Tinto Reserva Especial",
+        "tipo": "Tinto",
+        "cepas": ["Malbec", "Cabernet Sauvignon"],
+        "añejamiento": "36 meses en barrica de roble francés",
+        "descripcion": "Vino de cuerpo completo con aromas intensos a frutos rojos y especias, con notas de vainilla y tabaco. Final persistente y elegante.",
+        "precio": 120.00,
+        "contenido": "750ml",
+        "maridaje": ["Carnes rojas", "Quesos maduros", "Chocolate negro"]
+      },
+      {
+        "id": 2,
+        "nombre": "Vino Blanco Tacneño",
+        "tipo": "Blanco",
+        "cepas": ["Italia", "Moscatel de Alejandría"],
+        "añejamiento": "8 meses en tanques de acero inoxidable",
+        "descripcion": "Vino fresco y aromático con delicadas notas florales y frutales. Destaca por su acidez equilibrada y final cítrico.",
+        "precio": 75.00,
+        "contenido": "750ml",
+        "maridaje": ["Pescados", "Mariscos", "Quesos frescos", "Pastas con salsas ligeras"]
+      },
+      {
+        "id": 3,
+        "nombre": "Pisco Italia Premium",
+        "tipo": "Pisco",
+        "cepas": ["Italia"],
+        "añejamiento": "Reposo mínimo de 6 meses",
+        "descripcion": "Pisco aromático elaborado con uvas Italia cultivadas en los valles de Tacna. Destaca por su aroma floral y cítrico con un final limpio y elegante.",
+        "precio": 95.00,
+        "contenido": "500ml",
+        "graduacion": "42% vol.",
+        "premios": ["Medalla de Oro Concurso Nacional 2023", "Premio Excelencia Sur del Perú 2022"]
+      },
+      {
+        "id": 4,
+        "nombre": "Mistela Dulce Tradicional",
+        "tipo": "Mistela",
+        "cepas": ["Moscatel de Alejandría"],
+        "descripcion": "Bebida tradicional tacneña de sabor dulce y aromático. Perfecto como aperitivo o para acompañar postres.",
+        "proceso": "Fermentación parcial con adición de aguardiente de uva",
+        "precio": 60.00,
+        "contenido": "500ml",
+        "graduacion": "15% vol.",
+        "maridaje": ["Postres", "Quesos azules", "Frutos secos"]
+      },
+      {
+        "id": 5,
+        "nombre": "Vino Rosado del Valle",
+        "tipo": "Rosado",
+        "cepas": ["Negra Criolla", "Quebranta"],
+        "añejamiento": "6 meses en tanques de acero inoxidable",
+        "descripcion": "Vino fresco con aromas intensos a frutos rojos y notas cítricas. Equilibrado y con final persistente.",
+        "precio": 65.00,
+        "contenido": "750ml",
+        "temperatura": "8-10°C",
+        "maridaje": ["Parrillas ligeras", "Pastas", "Quesos semicurados"]
+      },
+      {
+        "id": 6,
+        "nombre": "Macerado de Damasco",
+        "tipo": "Macerado",
+        "cepas": ["Italia"],
+        "base": "Pisco puro de uva Italia",
+        "descripcion": "Tradicional macerado tacneño elaborado con damascos locales y pisco de uva Italia. Dulce y aromático con notas frutales intensas.",
+        "precio": 85.00,
+        "contenido": "500ml",
+        "graduacion": "28% vol.",
+        "tiempo_maceracion": "6 meses"
+      },
+      {
+        "id": 7,
+        "nombre": "Vino Gran Reserva Santa Elena",
+        "tipo": "Tinto",
+        "cepas": ["Cabernet Sauvignon", "Malbec", "Petit Verdot"],
+        "añejamiento": "48 meses (36 en barrica de roble francés y 12 en botella)",
+        "descripcion": "El vino emblema de la bodega. Complejo, con aromas a frutas negras maduras, especias, chocolate y tabaco. Taninos sedosos y final prolongado.",
+        "precio": 180.00,
+        "contenido": "750ml",
+        "edicion_limitada": true,
+        "produccion": "2000 botellas numeradas"
+      },
+      {
+        "id": 8,
+        "nombre": "Néctar de Uva Orgánico",
+        "tipo": "Bebida no alcohólica",
+        "cepas": ["Italia", "Moscatel"],
+        "descripcion": "Jugo natural de uva sin alcohol, sin azúcares añadidos ni conservantes. Ideal para quienes buscan disfrutar el sabor de las uvas tacneñas sin alcohol.",
+        "precio": 35.00,
+        "contenido": "1L",
+        "metodo": "Prensado en frío",
+        "certificacion": "Producto orgánico certificado"
+      }
+    ]
+  }
