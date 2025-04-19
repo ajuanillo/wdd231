@@ -63,7 +63,7 @@ header {
     grid-column-end: 3;
 }
 header h1 {
-    color: var(--color-accent-gold);
+    color: var(--color-text-secondary);
 }
 .navigation ul {
     padding: 0;
