@@ -61,7 +61,6 @@ header {
     padding: 0;
     grid-column-start: 1;
     grid-column-end: 3;
-    background-color: var(--color-accent-gold);
 }
 header h1 {
     color: var(--color-accent-gold);
@@ -76,22 +75,20 @@ header h1 {
 
 .show li {
     display: block;
-    background-color: var(--color-accent-gold);
 }
 
 .navigation .active {
-    background-color: var(--color-accent-gold);
+    background-color: var(--color-background-secondary);
     /* Puedes ajustar este color para que coincida con tu paleta */
-    color: var(--color-accent-burgundy);
+    color: var(--color-text-secondary);
     font-weight: bold;
-    text-decoration: underline;
     border-radius: 4px;
 }
 
 /* Para mejorar la accesibilidad */
 .navigation .active:focus,
 .navigation .active:hover {
-    outline: 2px solid #004080;
+    outline: 2px solid var(--color-text-secondary);
 }
 
 #menu.show::before {
@@ -101,7 +98,7 @@ header h1 {
 header,
 footer {
     background-color: var(--color-background);
-    color: var(--color-accent-gold);
+    color: var(--color-text-primary);
 }
 
 header,
@@ -112,7 +109,7 @@ footer {
 
 nav a {
     display: block;
-    color: var(--color-background-secondary);
+    color: var(--color-text-primary);
     text-align: center;
     padding: 1rem;
     text-decoration: none;
@@ -125,7 +122,7 @@ nav a:hover,
     background-color: var(--color-hover);
     color: var(--color-text-primary);
     border-radius: 4px;
-    border: 1px solid white;
+    border: 1px solid var(--color-accent-gold);
 }
 
 main,
@@ -137,7 +134,7 @@ footer {
     margin: 1rem auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0.5rem;
-    background-color: var(--color-accent-gold);
+    background-color: var(--color-background);
     text-align: center;
 }
 
